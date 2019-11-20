@@ -17,6 +17,8 @@
 		34052EB42383DD9900F6E044 /* MobileSwiftProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34052EB32383DD9900F6E044 /* MobileSwiftProjectUITests.swift */; };
 		34052EC52383E86E00F6E044 /* MVPHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34052EC42383E86E00F6E044 /* MVPHomeViewController.swift */; };
 		34052EC82383EC8500F6E044 /* MVPHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34052EC72383EC8500F6E044 /* MVPHomeTableViewCell.swift */; };
+		341040AA238546D1003AAE57 /* MVPKeyWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341040A9238546D1003AAE57 /* MVPKeyWordViewController.swift */; };
+		341040AE23854717003AAE57 /* MVPAsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341040AD23854717003AAE57 /* MVPAsHelper.swift */; };
 		A6E4D8E28C36788644360D8D /* Pods_MobileSwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DDDE2BC6A450DFFBB22FB3 /* Pods_MobileSwiftProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		34052EB52383DD9900F6E044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34052EC42383E86E00F6E044 /* MVPHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPHomeViewController.swift; sourceTree = "<group>"; };
 		34052EC72383EC8500F6E044 /* MVPHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPHomeTableViewCell.swift; sourceTree = "<group>"; };
+		341040A9238546D1003AAE57 /* MVPKeyWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPKeyWordViewController.swift; sourceTree = "<group>"; };
+		341040AD23854717003AAE57 /* MVPAsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPAsHelper.swift; sourceTree = "<group>"; };
 		399281005E19D63B90F3DA60 /* Pods-MobileSwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-MobileSwiftProject/Pods-MobileSwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C5DDDE2BC6A450DFFBB22FB3 /* Pods_MobileSwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileSwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9216FCE9EA114BD2343309 /* Pods-MobileSwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSwiftProject.release.xcconfig"; path = "Target Support Files/Pods-MobileSwiftProject/Pods-MobileSwiftProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +166,9 @@
 		34052EC22383DF6800F6E044 /* SwiftClass */ = {
 			isa = PBXGroup;
 			children = (
+				341040AC238546F5003AAE57 /* View */,
+				341040AB238546EE003AAE57 /* Other */,
+				341040A9238546D1003AAE57 /* MVPKeyWordViewController.swift */,
 			);
 			path = SwiftClass;
 			sourceTree = "<group>";
@@ -179,6 +186,21 @@
 				34052EC72383EC8500F6E044 /* MVPHomeTableViewCell.swift */,
 			);
 			path = HomeVCView;
+			sourceTree = "<group>";
+		};
+		341040AB238546EE003AAE57 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				341040AD23854717003AAE57 /* MVPAsHelper.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		341040AC238546F5003AAE57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9683FE9D3BFB3877670ACAE3 /* Frameworks */ = {
@@ -392,9 +414,11 @@
 			files = (
 				34052EC82383EC8500F6E044 /* MVPHomeTableViewCell.swift in Sources */,
 				34052E922383DD9700F6E044 /* AppDelegate.swift in Sources */,
+				341040AA238546D1003AAE57 /* MVPKeyWordViewController.swift in Sources */,
 				34052EC52383E86E00F6E044 /* MVPHomeViewController.swift in Sources */,
 				34052E942383DD9700F6E044 /* SceneDelegate.swift in Sources */,
 				34052E962383DD9700F6E044 /* ContentView.swift in Sources */,
+				341040AE23854717003AAE57 /* MVPAsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
