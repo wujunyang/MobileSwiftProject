@@ -24,14 +24,14 @@ class MVPHomeViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     //Data
     func setData(){
-        mvpTableDataList=["First"];
+        mvpTableDataList=["SnapKit"];
         mvpDataTableView.reloadData();
     }
     
     //UI
     func setMvpDataTableView(){
         mvpDataTableView=UITableView.init();
-        mvpDataTableView.frame=CGRect(x: 0, y: 64, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height);
+        mvpDataTableView.frame=CGRect(x: 0, y: 100, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height);
         mvpDataTableView.backgroundColor = .white;
         mvpDataTableView.dataSource=self;
         mvpDataTableView.delegate=self;
@@ -45,7 +45,6 @@ class MVPHomeViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     
     //UITableViewDelegate,UITableViewDataSource
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mvpTableDataList.count;
     }
@@ -57,5 +56,13 @@ class MVPHomeViewController: UIViewController,UITableViewDelegate,UITableViewDat
         cell.textLabel?.text=mvpTableDataList[indexPath.row] as? String;
         
         return cell;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row==0
+        {
+            let vc=MVPSnapKitViewController();
+            self.navigationController?.pushViewController(vc, animated: true);
+        }
     }
 }
