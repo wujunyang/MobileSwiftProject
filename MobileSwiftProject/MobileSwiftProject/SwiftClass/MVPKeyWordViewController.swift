@@ -13,7 +13,17 @@ class MVPKeyWordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //------------------方法调用------------------
         MVPAsHelper.showName();
+        
+        //------------------NotificationCenter------------------
+        let curNotification=MVPNotificationCenterHelper();
+        
+        //监听
+        curNotification.startNotificationObserver();
+        
+        //开始发布
+        curNotification.sendNotification();
     }
     
     
