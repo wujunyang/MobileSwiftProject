@@ -17,9 +17,11 @@
 		34052EB42383DD9900F6E044 /* MobileSwiftProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34052EB32383DD9900F6E044 /* MobileSwiftProjectUITests.swift */; };
 		34052EC52383E86E00F6E044 /* MVPHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34052EC42383E86E00F6E044 /* MVPHomeViewController.swift */; };
 		34052EC82383EC8500F6E044 /* MVPHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34052EC72383EC8500F6E044 /* MVPHomeTableViewCell.swift */; };
+		3406B394239F7C31000EF12C /* MVPTHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406B393239F7C31000EF12C /* MVPTHelper.swift */; };
 		340873C52390AA1C00E36C02 /* MVPSnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340873C42390AA1C00E36C02 /* MVPSnapKitViewController.swift */; };
 		341040AA238546D1003AAE57 /* MVPKeyWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341040A9238546D1003AAE57 /* MVPKeyWordViewController.swift */; };
 		341040AE23854717003AAE57 /* MVPAsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341040AD23854717003AAE57 /* MVPAsHelper.swift */; };
+		3410B5902399009D00EE514B /* MVPNilHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410B58F2399009D00EE514B /* MVPNilHelper.swift */; };
 		345F9143238D1B0800F768D9 /* MVPNotificationCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F9142238D1B0800F768D9 /* MVPNotificationCenterHelper.swift */; };
 		A6E4D8E28C36788644360D8D /* Pods_MobileSwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DDDE2BC6A450DFFBB22FB3 /* Pods_MobileSwiftProject.framework */; };
 /* End PBXBuildFile section */
@@ -58,9 +60,11 @@
 		34052EB52383DD9900F6E044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34052EC42383E86E00F6E044 /* MVPHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPHomeViewController.swift; sourceTree = "<group>"; };
 		34052EC72383EC8500F6E044 /* MVPHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPHomeTableViewCell.swift; sourceTree = "<group>"; };
+		3406B393239F7C31000EF12C /* MVPTHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTHelper.swift; sourceTree = "<group>"; };
 		340873C42390AA1C00E36C02 /* MVPSnapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSnapKitViewController.swift; sourceTree = "<group>"; };
 		341040A9238546D1003AAE57 /* MVPKeyWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPKeyWordViewController.swift; sourceTree = "<group>"; };
 		341040AD23854717003AAE57 /* MVPAsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPAsHelper.swift; sourceTree = "<group>"; };
+		3410B58F2399009D00EE514B /* MVPNilHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPNilHelper.swift; sourceTree = "<group>"; };
 		345F9142238D1B0800F768D9 /* MVPNotificationCenterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPNotificationCenterHelper.swift; sourceTree = "<group>"; };
 		399281005E19D63B90F3DA60 /* Pods-MobileSwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-MobileSwiftProject/Pods-MobileSwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C5DDDE2BC6A450DFFBB22FB3 /* Pods_MobileSwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileSwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +202,8 @@
 			children = (
 				341040AD23854717003AAE57 /* MVPAsHelper.swift */,
 				345F9142238D1B0800F768D9 /* MVPNotificationCenterHelper.swift */,
+				3410B58F2399009D00EE514B /* MVPNilHelper.swift */,
+				3406B393239F7C31000EF12C /* MVPTHelper.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MobileSwiftProject/Pods-MobileSwiftProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -377,6 +384,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -421,10 +429,12 @@
 				340873C52390AA1C00E36C02 /* MVPSnapKitViewController.swift in Sources */,
 				34052EC82383EC8500F6E044 /* MVPHomeTableViewCell.swift in Sources */,
 				34052E922383DD9700F6E044 /* AppDelegate.swift in Sources */,
+				3410B5902399009D00EE514B /* MVPNilHelper.swift in Sources */,
 				341040AA238546D1003AAE57 /* MVPKeyWordViewController.swift in Sources */,
 				34052EC52383E86E00F6E044 /* MVPHomeViewController.swift in Sources */,
 				34052E942383DD9700F6E044 /* SceneDelegate.swift in Sources */,
 				345F9143238D1B0800F768D9 /* MVPNotificationCenterHelper.swift in Sources */,
+				3406B394239F7C31000EF12C /* MVPTHelper.swift in Sources */,
 				34052E962383DD9700F6E044 /* ContentView.swift in Sources */,
 				341040AE23854717003AAE57 /* MVPAsHelper.swift in Sources */,
 			);

@@ -102,5 +102,5 @@ class MVPSnapKitViewController: UIViewController {
             make.size.equalTo(CGSize(width: 100, height: 100));
         }
     }
-    
+
 }

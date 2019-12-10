@@ -16,6 +16,31 @@ class MVPKeyWordViewController: UIViewController {
         //------------------方法调用------------------
         MVPAsHelper.showName();
         
+        //-----------------
+        let thelper = MVPTHelper.init();
+        
+        //------------------MVPNilHelper------------------
+        let curNilHelper=MVPNilHelper();
+        
+        if let roomCount=curNilHelper.mvpPerson?.numberOfRooms
+        {
+            print("John's residence has \(roomCount) room(s).")
+        }
+        else{
+            print("Unable to retrieve the number of rooms."); //--
+        }
+        
+        let curNilPerson=MVPNilPerson();
+        curNilHelper.mvpPerson=curNilPerson;
+        
+        if let roomCount=curNilHelper.mvpPerson?.numberOfRooms
+        {
+            print("John's residence has \(roomCount) room(s).");//--
+        }
+        else{
+            print("Unable to retrieve the number of rooms.")
+        }
+        
         //------------------NotificationCenter------------------
         let curNotification=MVPNotificationCenterHelper();
         
