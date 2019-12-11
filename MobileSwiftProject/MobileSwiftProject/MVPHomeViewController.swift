@@ -24,7 +24,7 @@ class MVPHomeViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     //Data
     func setData(){
-        mvpTableDataList=["SnapKit"];
+        mvpTableDataList=["SnapKit","Alamofire"];
         mvpDataTableView.reloadData();
     }
     
@@ -62,6 +62,11 @@ class MVPHomeViewController: UIViewController,UITableViewDelegate,UITableViewDat
         if indexPath.row==0
         {
             let vc=MVPSnapKitViewController();
+            self.navigationController?.pushViewController(vc, animated: true);
+        }
+        if indexPath.row==1
+        {
+            let vc=MVPAlamofireViewController();
             self.navigationController?.pushViewController(vc, animated: true);
         }
     }

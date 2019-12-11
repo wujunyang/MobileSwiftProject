@@ -10,6 +10,7 @@ target 'MobileSwiftProject' do
   # Pods for SwiftProject
 pod 'SnapKit'
 pod 'SwiftyJSON'
+pod 'HandyJSON'
 pod 'Alamofire'
 pod 'Kingfisher'
 pod 'Moya'
