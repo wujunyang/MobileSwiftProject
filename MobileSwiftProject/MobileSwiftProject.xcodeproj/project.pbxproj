@@ -20,6 +20,7 @@
 		3406B394239F7C31000EF12C /* MVPTHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406B393239F7C31000EF12C /* MVPTHelper.swift */; };
 		3406B396239F8889000EF12C /* MVPAlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406B395239F8888000EF12C /* MVPAlamofireViewController.swift */; };
 		340873C52390AA1C00E36C02 /* MVPSnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340873C42390AA1C00E36C02 /* MVPSnapKitViewController.swift */; };
+		340A0B2C23AB741400AE0DB5 /* MVPBlockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A0B2B23AB741400AE0DB5 /* MVPBlockHelper.swift */; };
 		341040AA238546D1003AAE57 /* MVPKeyWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341040A9238546D1003AAE57 /* MVPKeyWordViewController.swift */; };
 		341040AE23854717003AAE57 /* MVPAsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341040AD23854717003AAE57 /* MVPAsHelper.swift */; };
 		3410B5902399009D00EE514B /* MVPNilHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410B58F2399009D00EE514B /* MVPNilHelper.swift */; };
@@ -72,6 +73,7 @@
 		3406B393239F7C31000EF12C /* MVPTHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTHelper.swift; sourceTree = "<group>"; };
 		3406B395239F8888000EF12C /* MVPAlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPAlamofireViewController.swift; sourceTree = "<group>"; };
 		340873C42390AA1C00E36C02 /* MVPSnapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSnapKitViewController.swift; sourceTree = "<group>"; };
+		340A0B2B23AB741400AE0DB5 /* MVPBlockHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPBlockHelper.swift; sourceTree = "<group>"; };
 		341040A9238546D1003AAE57 /* MVPKeyWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPKeyWordViewController.swift; sourceTree = "<group>"; };
 		341040AD23854717003AAE57 /* MVPAsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPAsHelper.swift; sourceTree = "<group>"; };
 		3410B58F2399009D00EE514B /* MVPNilHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPNilHelper.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				345F9142238D1B0800F768D9 /* MVPNotificationCenterHelper.swift */,
 				3410B58F2399009D00EE514B /* MVPNilHelper.swift */,
 				3406B393239F7C31000EF12C /* MVPTHelper.swift */,
+				340A0B2B23AB741400AE0DB5 /* MVPBlockHelper.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				345F9143238D1B0800F768D9 /* MVPNotificationCenterHelper.swift in Sources */,
 				344558C223A8AB46005A59A1 /* NetworkManager.swift in Sources */,
 				344558C723A8AB46005A59A1 /* MomentsProvider.swift in Sources */,
+				340A0B2C23AB741400AE0DB5 /* MVPBlockHelper.swift in Sources */,
 				3406B394239F7C31000EF12C /* MVPTHelper.swift in Sources */,
 				34052E962383DD9700F6E044 /* ContentView.swift in Sources */,
 				341040AE23854717003AAE57 /* MVPAsHelper.swift in Sources */,
