@@ -20,9 +20,18 @@
 		3406B394239F7C31000EF12C /* MVPTHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406B393239F7C31000EF12C /* MVPTHelper.swift */; };
 		3406B396239F8889000EF12C /* MVPAlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406B395239F8888000EF12C /* MVPAlamofireViewController.swift */; };
 		340873C52390AA1C00E36C02 /* MVPSnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340873C42390AA1C00E36C02 /* MVPSnapKitViewController.swift */; };
+		340A0B2C23AB741400AE0DB5 /* MVPBlockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A0B2B23AB741400AE0DB5 /* MVPBlockHelper.swift */; };
 		341040AA238546D1003AAE57 /* MVPKeyWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341040A9238546D1003AAE57 /* MVPKeyWordViewController.swift */; };
 		341040AE23854717003AAE57 /* MVPAsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341040AD23854717003AAE57 /* MVPAsHelper.swift */; };
 		3410B5902399009D00EE514B /* MVPNilHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410B58F2399009D00EE514B /* MVPNilHelper.swift */; };
+		344558B723A8A9DC005A59A1 /* MVPMoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344558B623A8A9DC005A59A1 /* MVPMoyaViewController.swift */; };
+		344558C223A8AB46005A59A1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344558BB23A8AB46005A59A1 /* NetworkManager.swift */; };
+		344558C323A8AB46005A59A1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344558BC23A8AB46005A59A1 /* API.swift */; };
+		344558C423A8AB46005A59A1 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344558BD23A8AB46005A59A1 /* MoyaConfig.swift */; };
+		344558C523A8AB46005A59A1 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344558BF23A8AB46005A59A1 /* APIProvider.swift */; };
+		344558C623A8AB46005A59A1 /* MomentsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344558C023A8AB46005A59A1 /* MomentsAPI.swift */; };
+		344558C723A8AB46005A59A1 /* MomentsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344558C123A8AB46005A59A1 /* MomentsProvider.swift */; };
+		344558CA23A8ACB5005A59A1 /* GHItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344558C923A8ACB4005A59A1 /* GHItem.swift */; };
 		345F9143238D1B0800F768D9 /* MVPNotificationCenterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F9142238D1B0800F768D9 /* MVPNotificationCenterHelper.swift */; };
 		A6E4D8E28C36788644360D8D /* Pods_MobileSwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DDDE2BC6A450DFFBB22FB3 /* Pods_MobileSwiftProject.framework */; };
 /* End PBXBuildFile section */
@@ -64,9 +73,18 @@
 		3406B393239F7C31000EF12C /* MVPTHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTHelper.swift; sourceTree = "<group>"; };
 		3406B395239F8888000EF12C /* MVPAlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPAlamofireViewController.swift; sourceTree = "<group>"; };
 		340873C42390AA1C00E36C02 /* MVPSnapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSnapKitViewController.swift; sourceTree = "<group>"; };
+		340A0B2B23AB741400AE0DB5 /* MVPBlockHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPBlockHelper.swift; sourceTree = "<group>"; };
 		341040A9238546D1003AAE57 /* MVPKeyWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPKeyWordViewController.swift; sourceTree = "<group>"; };
 		341040AD23854717003AAE57 /* MVPAsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPAsHelper.swift; sourceTree = "<group>"; };
 		3410B58F2399009D00EE514B /* MVPNilHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPNilHelper.swift; sourceTree = "<group>"; };
+		344558B623A8A9DC005A59A1 /* MVPMoyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPMoyaViewController.swift; sourceTree = "<group>"; };
+		344558BB23A8AB46005A59A1 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		344558BC23A8AB46005A59A1 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		344558BD23A8AB46005A59A1 /* MoyaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
+		344558BF23A8AB46005A59A1 /* APIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		344558C023A8AB46005A59A1 /* MomentsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentsAPI.swift; sourceTree = "<group>"; };
+		344558C123A8AB46005A59A1 /* MomentsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MomentsProvider.swift; path = "Other/MoyaHelper/Router2(另外一种封装思路)/MomentsProvider.swift"; sourceTree = "<group>"; };
+		344558C923A8ACB4005A59A1 /* GHItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHItem.swift; sourceTree = "<group>"; };
 		345F9142238D1B0800F768D9 /* MVPNotificationCenterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPNotificationCenterHelper.swift; sourceTree = "<group>"; };
 		399281005E19D63B90F3DA60 /* Pods-MobileSwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileSwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-MobileSwiftProject/Pods-MobileSwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C5DDDE2BC6A450DFFBB22FB3 /* Pods_MobileSwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileSwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,8 +204,12 @@
 		34052EC32383E12B00F6E044 /* SwiftPlug */ = {
 			isa = PBXGroup;
 			children = (
+				344558C823A8ACA1005A59A1 /* Model */,
+				344558B823A8AA61005A59A1 /* Other */,
+				344558C123A8AB46005A59A1 /* MomentsProvider.swift */,
 				340873C42390AA1C00E36C02 /* MVPSnapKitViewController.swift */,
 				3406B395239F8888000EF12C /* MVPAlamofireViewController.swift */,
+				344558B623A8A9DC005A59A1 /* MVPMoyaViewController.swift */,
 			);
 			path = SwiftPlug;
 			sourceTree = "<group>";
@@ -207,6 +229,7 @@
 				345F9142238D1B0800F768D9 /* MVPNotificationCenterHelper.swift */,
 				3410B58F2399009D00EE514B /* MVPNilHelper.swift */,
 				3406B393239F7C31000EF12C /* MVPTHelper.swift */,
+				340A0B2B23AB741400AE0DB5 /* MVPBlockHelper.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -216,6 +239,50 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		344558B823A8AA61005A59A1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				344558B923A8AA6A005A59A1 /* MoyaHelper */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		344558B923A8AA6A005A59A1 /* MoyaHelper */ = {
+			isa = PBXGroup;
+			children = (
+				344558BA23A8AB46005A59A1 /* Router(懒人版) */,
+				344558BE23A8AB46005A59A1 /* Router2(另外一种封装思路) */,
+			);
+			path = MoyaHelper;
+			sourceTree = "<group>";
+		};
+		344558BA23A8AB46005A59A1 /* Router(懒人版) */ = {
+			isa = PBXGroup;
+			children = (
+				344558BB23A8AB46005A59A1 /* NetworkManager.swift */,
+				344558BC23A8AB46005A59A1 /* API.swift */,
+				344558BD23A8AB46005A59A1 /* MoyaConfig.swift */,
+			);
+			path = "Router(懒人版)";
+			sourceTree = "<group>";
+		};
+		344558BE23A8AB46005A59A1 /* Router2(另外一种封装思路) */ = {
+			isa = PBXGroup;
+			children = (
+				344558BF23A8AB46005A59A1 /* APIProvider.swift */,
+				344558C023A8AB46005A59A1 /* MomentsAPI.swift */,
+			);
+			path = "Router2(另外一种封装思路)";
+			sourceTree = "<group>";
+		};
+		344558C823A8ACA1005A59A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				344558C923A8ACB4005A59A1 /* GHItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9683FE9D3BFB3877670ACAE3 /* Frameworks */ = {
@@ -433,11 +500,20 @@
 				34052EC82383EC8500F6E044 /* MVPHomeTableViewCell.swift in Sources */,
 				34052E922383DD9700F6E044 /* AppDelegate.swift in Sources */,
 				3410B5902399009D00EE514B /* MVPNilHelper.swift in Sources */,
+				344558C623A8AB46005A59A1 /* MomentsAPI.swift in Sources */,
+				344558C323A8AB46005A59A1 /* API.swift in Sources */,
+				344558C523A8AB46005A59A1 /* APIProvider.swift in Sources */,
 				341040AA238546D1003AAE57 /* MVPKeyWordViewController.swift in Sources */,
 				34052EC52383E86E00F6E044 /* MVPHomeViewController.swift in Sources */,
+				344558C423A8AB46005A59A1 /* MoyaConfig.swift in Sources */,
 				3406B396239F8889000EF12C /* MVPAlamofireViewController.swift in Sources */,
 				34052E942383DD9700F6E044 /* SceneDelegate.swift in Sources */,
+				344558B723A8A9DC005A59A1 /* MVPMoyaViewController.swift in Sources */,
+				344558CA23A8ACB5005A59A1 /* GHItem.swift in Sources */,
 				345F9143238D1B0800F768D9 /* MVPNotificationCenterHelper.swift in Sources */,
+				344558C223A8AB46005A59A1 /* NetworkManager.swift in Sources */,
+				344558C723A8AB46005A59A1 /* MomentsProvider.swift in Sources */,
+				340A0B2C23AB741400AE0DB5 /* MVPBlockHelper.swift in Sources */,
 				3406B394239F7C31000EF12C /* MVPTHelper.swift in Sources */,
 				34052E962383DD9700F6E044 /* ContentView.swift in Sources */,
 				341040AE23854717003AAE57 /* MVPAsHelper.swift in Sources */,

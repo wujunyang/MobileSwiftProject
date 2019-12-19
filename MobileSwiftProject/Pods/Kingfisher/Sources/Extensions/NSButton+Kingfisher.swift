@@ -89,6 +89,7 @@ extension KingfisherWrapper where Base: NSButton {
         let task = KingfisherManager.shared.retrieveImage(
             with: source,
             options: options,
+            downloadTaskUpdated: { mutatingSelf.imageTask = $0 },
             completionHandler: { result in
                 CallbackQueue.mainCurrentOrAsync.execute {
                     guard issuedIdentifier == self.taskIdentifier else {
@@ -209,6 +210,7 @@ extension KingfisherWrapper where Base: NSButton {
         let task = KingfisherManager.shared.retrieveImage(
             with: source,
             options: options,
+            downloadTaskUpdated: { mutatingSelf.alternateImageTask = $0 },
             completionHandler: { result in
                 CallbackQueue.mainCurrentOrAsync.execute {
                     guard issuedIdentifier == self.alternateTaskIdentifier else {
@@ -302,8 +304,6 @@ extension KingfisherWrapper where Base: NSButton {
     public private(set) var taskIdentifier: Source.Identifier.Value? {
         get {
             let box: Box<Source.Identifier.Value>? = getAssociatedObject(base, &taskIdentifierKey)
-            defer { objc_sync_exit(self) }
-            objc_sync_enter(self)
             return box?.value
         }
         set {
@@ -320,8 +320,6 @@ extension KingfisherWrapper where Base: NSButton {
     public private(set) var alternateTaskIdentifier: Source.Identifier.Value? {
         get {
             let box: Box<Source.Identifier.Value>? = getAssociatedObject(base, &alternateTaskIdentifierKey)
-            defer { objc_sync_exit(self) }
-            objc_sync_enter(self)
             return box?.value
         }
         set {

@@ -12,7 +12,8 @@ class MVPKeyWordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor=UIColor.white;
+        
         //------------------方法调用------------------
         MVPAsHelper.showName();
         
@@ -40,6 +41,18 @@ class MVPKeyWordViewController: UIViewController {
         else{
             print("Unable to retrieve the number of rooms.")
         }
+        
+        //------------------Block------------------
+        
+        let blockHelper=MVPBlockHelper();
+        
+        blockHelper.sortNames1();
+        
+        blockHelper.sortNames();
+        
+        blockHelper.sortNames3();
+        
+        blockHelper.sortNames4();
         
         //------------------NotificationCenter------------------
         let curNotification=MVPNotificationCenterHelper();

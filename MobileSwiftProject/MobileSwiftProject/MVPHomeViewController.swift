@@ -24,7 +24,7 @@ class MVPHomeViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     //Data
     func setData(){
-        mvpTableDataList=["SnapKit","Alamofire"];
+        mvpTableDataList=["SnapKit","Alamofire","Moya","Swift语法"];
         mvpDataTableView.reloadData();
     }
     
@@ -67,6 +67,16 @@ class MVPHomeViewController: UIViewController,UITableViewDelegate,UITableViewDat
         if indexPath.row==1
         {
             let vc=MVPAlamofireViewController();
+            self.navigationController?.pushViewController(vc, animated: true);
+        }
+        if indexPath.row==2
+        {
+            let vc=MVPMoyaViewController();
+            self.navigationController?.pushViewController(vc, animated: true);
+        }
+        if indexPath.row==3
+        {
+            let vc=MVPKeyWordViewController();
             self.navigationController?.pushViewController(vc, animated: true);
         }
     }
